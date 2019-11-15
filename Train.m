@@ -34,6 +34,17 @@ Y=Y(:,out);
 %% classifier
 Mdl = fitcknn(Y,id,'NumNeighbors',5,'Standardize',1);
 save knnmodel Mdl out
-%% Update git repository 
+%% Update git     repository 
+
+% !cd genetic_gitlab_test
+% !cd existing_folder
+
+!git init
+!git remote add origin https://gitlab.com/hibakareem/genetic_gitlab_test.git
+!git add Train.m
+!git commit -m "Initial commit"
+!git push -u origin master
+
+
 
 
