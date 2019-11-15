@@ -34,3 +34,6 @@ Y=Y(:,out);
 %% classifier
 Mdl = fitcknn(Y,id,'NumNeighbors',5,'Standardize',1);
 save knnmodel Mdl out
+%% Update git repository 
+
+
